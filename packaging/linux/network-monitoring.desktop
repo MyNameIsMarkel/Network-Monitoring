@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Network Monitoring
+GenericName=Mapa de red
+Comment=Mapea la red automáticamente y genera diagramas draw.io
+Exec=/opt/network-monitoring/netmon %f
+Icon=network-monitoring
+Terminal=false
+Categories=Network;System;Monitor;
+MimeType=application/vnd.jgraph.mxfile;
+Keywords=red;network;snmp;lldp;cdp;drawio;mapa;topologia;
+StartupWMClass=netmon
