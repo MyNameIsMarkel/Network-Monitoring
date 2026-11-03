@@ -42,12 +42,9 @@ Descarga la última versión desde la pestaña **Releases** del repositorio:
 | Debian / Ubuntu / Mint | `network-monitoring_x.y.z_amd64.deb` | `sudo apt install ./network-monitoring_*.deb` |
 | Otras distribuciones | `network-monitoring-x.y.z-linux-x86_64.tar.gz` | Descomprimir y ejecutar `./install.sh` |
 
-Los instaladores los compila GitHub Actions automáticamente al publicar una etiqueta de versión:
-
-```bash
-git tag v1.0.0
-git push origin v1.0.0
-```
+GitHub Actions compila los instaladores en cada cambio que llega a `main` y los publica en la
+Release `vX.Y.Z` correspondiente a la versión de `netmon/__init__.py`. Para sacar una versión
+nueva basta con subir ese número.
 
 ## Preparar la red para el modo SNMP + LLDP/CDP
 
